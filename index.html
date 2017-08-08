@@ -1,0 +1,156 @@
+<!--#2: Question Game [40 min]
+
+ - Starting from a blank HTML file, create an object with 10 questions. The object should be structured as follows: q1: [“QUESTION”, “ANSWER”] q2: [“QUESTION”, “ANSWER”]
+ - Then create code that will ask the user questions, one by one. The user must answer by hitting t (for true) or f (for false).
+ - Check the user’s answer against the correct answer, and provide them with an alert telling them if they are right or wrong.
+ - Bonus: Keep track of the user's score.-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Question Game</title>	
+</head>
+
+<body>
+
+
+
+<div id="score">
+	
+</div>
+
+
+
+
+<script>
+	
+     
+	var questions = {
+		q1: ["The Earth round.", "True"],
+		q2: ["The sky is green.", "False"],
+		q3: ["The ocean is full of Jello.", "False"],
+		q4: ["Pigs can fly.", "False"],
+		q5: ["An Orange is a fruit.", "True"],
+		q6: ["Four quarters are in a dollar.", "True"],
+		q7: ["Washington DC is the capital of USA.", "True"],
+		q8: ["Phoenix is in Arizona.", "True"],
+		q9: ["Voldemort killed Harry Potter.", "False"],
+		q10: ["Cows are considered fish.", "False"]
+	};
+
+	var score = 0;
+
+	alert("A series of true/false questions will follow, please answer with t or f.")
+
+	var userAnswer1 = prompt(questions.q1[0]);
+
+	  if (userAnswer1.toLowerCase().charAt(0) === "t" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer2 = prompt(questions.q2[0]);
+	 if (userAnswer2.toLowerCase().charAt(0) === "f" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer3 = prompt(questions.q3[0]);
+		 if (userAnswer3.toLowerCase().charAt(0) === "f" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer4 = prompt(questions.q4[0]);
+		 if (userAnswer4.toLowerCase().charAt(0) === "f" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer5 = prompt(questions.q5[0]);
+		 if (userAnswer5.toLowerCase().charAt(0) === "t" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer6 = prompt(questions.q6[0]);
+		 if (userAnswer6.toLowerCase().charAt(0) === "t" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer7 = prompt(questions.q7[0]);
+		 if (userAnswer7.toLowerCase().charAt(0) === "t" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer8 = prompt(questions.q8[0]);
+		 if (userAnswer8.toLowerCase().charAt(0) === "t" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer9 = prompt(questions.q9[0]);
+		 if (userAnswer9.toLowerCase().charAt(0) === "f" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+	var userAnswer10 = prompt(questions.q10[0]);
+		 if (userAnswer10.toLowerCase().charAt(0) === "f" ) {
+	  	alert ("You are correct!!")
+	  	score++;
+	  	document.getElementById("score").innerHTML = "Your Score is: " + score;
+	  }
+
+	  else {
+	  	alert ("You are an idiot.")
+	  }
+
+	alert("Your score is: " + score);
+
+
+	
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</body>
+</html>
